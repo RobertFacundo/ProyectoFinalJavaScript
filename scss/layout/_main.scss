@@ -12,18 +12,18 @@ main {
         justify-content: center;
 
         width: 100vw;
-        gap: 20px; // Espacio entre las tarjetas
-        padding: 0 20px; // Ajusta el relleno del contenedor según sea necesario
+        gap: 3px; // Espacio entre las tarjetas
+        padding: 10px 10px; // Ajusta el relleno del contenedor según sea necesario
 
 
         .card {
             width: 300px; // O ajusta el tamaño según lo necesites
             height: auto; // O ajusta la altura según lo necesites
             box-shadow: 0px 1px 20px 2px rgb(2, 61, 12); // Añade sombra según sea necesario
-            margin-top: 13px;
-            margin-left: 50px;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
+            margin-top: 3px;
+            margin-left: 20px;
+            margin-bottom: 4px;
+            padding-bottom: 4px;
 
             border-radius: 10px; // Ajusta el radio de borde según sea necesario
             transition: all 0.4s ease-in-out; // Agrega una transición al hacer hover
