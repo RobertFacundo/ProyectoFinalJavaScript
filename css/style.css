@@ -19,7 +19,7 @@ body {
 
 @font-face {
   font-family: 'h1';
-  src: url("../../resources/searchlight.regular.otf") format("opentype"); }
+  src: url("../../resources/SignalineScript-DO15d.ttf") format("truetype"); }
 
 .parallax-container {
   min-height: 100vh;
@@ -34,7 +34,7 @@ body {
   font-family: "Josefin Sans", sans-serif; }
   .parallax-container h1 {
     font-family: h1;
-    padding-top: 130px;
+    padding-top: 100px;
     font-weight: 100;
     text-align: center;
     font-size: 210px;
@@ -49,11 +49,11 @@ body {
     color: #e4ebe0;
     font-size: 30px;
     font-weight: 400;
-    padding-top: 90px; }
+    padding-top: 30px; }
   .parallax-container h4 {
     color: rgba(255, 255, 255, 0.644);
     font-size: 20px;
-    padding-top: 70px; }
+    padding-top: 40px; }
 
 .header {
   background-image: url(../../multimedia/low-poly-grid-haikei.jpg);
