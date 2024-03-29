@@ -5,4 +5,20 @@
 
 body {
     overflow-x: hidden;
+    
+    &::-webkit-scrollbar {
+        width: 13px;
+        /* Ancho de la barra de desplazamiento */
+    }
+
+    &::-webkit-scrollbar-track {
+        background-image: linear-gradient(39deg,#000601, #0d3618, #046523, #009928, #00cf23, #009928, #046523, #0d3618, #000601);
+        /* Color de fondo de la pista */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #6df491f9;
+        /* Color del mango de la barra de desplazamiento */
+        border-radius: 8px;
+    }
 }

@@ -4,16 +4,17 @@ main {
 
     .parallax-container2 {
         background-image: url(../../multimedia/parallax/2.png);
+        box-shadow: inset rgb(4, 101, 35) -9px 6px 20px 3px;
         display: grid;
         grid-template-columns: repeat(4, 1fr); // Puedes ajustar el número de columnas según sea necesario
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: 30px;
+
         width: 100vw;
         gap: 20px; // Espacio entre las tarjetas
         padding: 0 20px; // Ajusta el relleno del contenedor según sea necesario
-       
+
 
         .card {
             width: 300px; // O ajusta el tamaño según lo necesites
@@ -101,8 +102,69 @@ main {
     .tupedido {
         width: 100vw;
         overflow: hidden;
-        margin-top: 50px;
         min-height: 60vh;
-        background-color: var(--color);
+        background-image: url(../../multimedia/tupedido.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* Ajusta el tamaño de la imagen */
+        box-shadow: 2px -6px 14px 3px #046523;
+        padding: 20px;
+        border-radius: 10px;
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: "Josefin Sans", sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-family: "Josefin Sans", sans-serif;
+
+            th,
+            td {
+                padding: 10px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f1f1f14e;
+            }
+
+            tfoot td {
+                font-weight: bold;
+            }
+        }
+
+        .botones {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+
+            button {
+                border-radius: 4px;
+                background-image: linear-gradient(to right bottom, #00cf23, #009928, #046523, #0d3618, #000601);
+                border-radius: 7%;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 17px;
+                font-family: "Josefin Sans", sans-serif;
+                padding: 16px 23px;
+                margin: 5px 20px;
+                width: 197px;
+                box-shadow: 0px 1px 3px 3px #02500e;
+                transition: width 0.5s;
+                cursor: pointer;
+                margin: 5px;
+
+                &:hover {
+                    background-image: linear-gradient(to top left, #00cf23, #009928, #046523, #0d3618, #000601);
+                }
+            }
+        }
     }
 }

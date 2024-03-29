@@ -36,7 +36,11 @@
 }
 
 .header {
+    background-image: url(../../multimedia/low-poly-grid-haikei.svg);
+    // background-repeat: no-repeat;
+    background-size: cover;
     width: 100vw;
     overflow: hidden;
     min-height: 40vh;
+    box-shadow: 2px -6px 14px 3px #043b15;
 }

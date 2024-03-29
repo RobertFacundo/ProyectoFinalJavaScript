@@ -15,14 +15,9 @@
     <header class="parallax-container">
         <h1>Robert</h1>
         <h2>Pedí rico, te lo llevamos rápido</h2>
-        <h4>(scrollea tranquilo)</h3>
+        <h4>(scrollea sin culpa)</h3>
     </header>
     <div class="header">
-        <ul>
-            <li>Comida</li>
-            <li>Bebida</li>
-            <li>Tu Pedido</li>
-        </ul>
     </div>
     <main>
         <div class="parallax-container parallax-container2">
@@ -206,7 +201,31 @@
         </div>
 
         <div class="tupedido">
-            <h1>Lorem, ipsum </h1>
+            <h1>Tu Pedido</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Subtotal</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se mostrarán los productos del carrito -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total:</td>
+                        <td id="total">$0.00</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="botones">
+                <button id="vaciar-carrito">Vaciar Carrito</button>
+                <button id="realizar-pedido">Realizar Pedido</button>
+            </div class="botones">
         </div>
     </main>
     <footer class="footer">
