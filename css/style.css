@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  overflow-x: hidden; }
+
+@font-face {
+  font-family: 'h1';
+  src: url("../../resources/searchlight.regular.otf") format("opentype"); }
+
+.parallax-container {
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  /*parallax effects:  */
+  background-attachment: fixed;
+  background-image: url(../../multimedia/parallax/1.avif);
+  background-position: center;
+  background-size: center;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif; }
+  .parallax-container h1 {
+    font-family: h1;
+    padding-top: 130px;
+    font-weight: 100;
+    text-align: center;
+    font-size: 210px;
+    background-image: linear-gradient(to bottom, #05ff2f, #07c63a, #02852b, #008225, #022708);
+    -webkit-background-clip: text;
+    /* Para WebKit browsers (Safari/Chrome) */
+    background-clip: text;
+    /* Para otros navegadores */
+    color: transparent;
+    /* Ocultar el texto original */ }
+  .parallax-container h2 {
+    color: #e4ebe0;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 90px; }
+  .parallax-container h4 {
+    color: rgba(255, 255, 255, 0.644);
+    font-size: 20px;
+    padding-top: 70px; }
+
+.header {
+  width: 100vw;
+  overflow: hidden;
+  min-height: 40vh; }
+
+main {
+  width: 100vw;
+  overflow: hidden; }
+  main .parallax-container2 {
+    background-image: url(../../multimedia/parallax/2.png);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 100vw;
+    gap: 20px;
+    padding: 0 20px; }
+    main .parallax-container2 .card {
+      width: 300px;
+      height: auto;
+      box-shadow: 0px 1px 20px 2px #023d0c;
+      margin-top: 13px;
+      margin-left: 50px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+      transition: all 0.4s ease-in-out; }
+      main .parallax-container2 .card:hover {
+        transform: scale(1.05);
+        box-shadow: 1px 1px 16px 10px #025710; }
+      main .parallax-container2 .card img {
+        width: 100%;
+        border-radius: 10px; }
+      main .parallax-container2 .card p {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 18px;
+        color: white;
+        padding: 5px 23px;
+        line-height: 24px; }
+      main .parallax-container2 .card button {
+        display: inline-block;
+        border-radius: 4px;
+        background-image: linear-gradient(to right bottom, #00cf23, #009928, #046523, #0d3618, #000601);
+        border: none;
+        border-radius: 7%;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 17px;
+        font-family: "Josefin Sans", sans-serif;
+        padding: 16px 23px;
+        width: 197px;
+        box-shadow: 0px 1px 3px 3px #02500e;
+        transition: width 0.5s;
+        cursor: pointer;
+        margin: 5px; }
+        main .parallax-container2 .card button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s; }
+          main .parallax-container2 .card button span:after {
+            content: '+';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -15px;
+            transition: 0.5s; }
+        main .parallax-container2 .card button:hover {
+          transition: background-image 0.5s, box-shadow 0.5s; }
+        main .parallax-container2 .card button:hover span {
+          padding-right: 20px; }
+          main .parallax-container2 .card button:hover span:after {
+            opacity: 1;
+            right: 0; }
+  main .tupedido {
+    width: 100vw;
+    overflow: hidden;
+    margin-top: 50px;
+    min-height: 60vh;
+    background-color: var(--color); }
+
+.footer {
+  background-attachment: fixed;
+  background-image: url(../../multimedia/parallax/1.avif);
+  background-position: center;
+  background-size: center;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100vw;
+  height: 100%; }
+  .footer h1 {
+    font-family: h1;
+    padding-top: 130px;
+    margin-bottom: 0;
+    font-weight: 100;
+    text-align: center;
+    font-size: 210px;
+    background-image: linear-gradient(to bottom, #05ff2f, #07c63a, #02852b, #008225, #022708);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
+  .footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer ul li {
+      margin-top: 50px;
+      margin-bottom: 300px;
+      padding: 0; }
+      .footer ul li a {
+        text-decoration: none;
+        font-size: 50px;
+        margin: 50px;
+        color: black;
+        transition: color 0.7s ease-in-out; }
+        .footer ul li a:hover {
+          color: #00ff44; }
+          .footer ul li a:hover .tooltip {
+            visibility: visible;
+            opacity: 1; }
+        .footer ul li a .tooltip {
+          color: #000000;
+          padding: 6px 10px;
+          width: 100px;
+          border-radius: 5px;
+          opacity: 0;
+          background-color: #1da319;
+          visibility: hidden;
+          font-size: 14px;
+          transition: all 0.3s ease;
+          text-align: center; }
+  .footer .p-footer {
+    width: 100vw;
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 20;
+    padding-bottom: 20;
+    color: #e4ebe0;
+    text-align: center;
+    padding: 10px 0; }
+    .footer .p-footer a {
+      color: #e4ebe0;
+      text-decoration: none; }
+      .footer .p-footer a:hover {
+        color: #17c807; }
