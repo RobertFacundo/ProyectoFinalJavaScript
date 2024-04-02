@@ -100,29 +100,43 @@ main {
 
 
     .tupedido {
+        position: relative;
+        /* Importante para controlar el posicionamiento */
         width: 100vw;
         overflow: hidden;
         min-height: 60vh;
-        background-image: url(../../multimedia/tupedido.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        /* Ajusta el tamaño de la imagen */
+        border-radius: 10px;
         box-shadow: 2px -6px 14px 3px #046523;
         padding: 20px;
-        border-radius: 10px;
+        font-family: "Josefin Sans", sans-serif;
+
+        img {
+            position: absolute;
+            /* Posiciona la imagen absolutamente dentro del contenedor */
+            width: 100%;
+            /* La imagen ocupa todo el ancho del contenedor */
+            height: 100%;
+            /* La imagen ocupa todo el alto del contenedor */
+            object-fit: cover;
+            /* Ajusta la imagen para cubrir completamente el contenedor */
+            top: 0;
+            /* La imagen comienza desde la parte superior */
+            left: 0;
+            /* La imagen comienza desde la parte izquierda */
+            z-index: -1;
+            /* Coloca la imagen detrás de los otros elementos */
+        }
 
         h1 {
             font-size: 24px;
             margin-bottom: 20px;
             text-align: center;
-            font-family: "Josefin Sans", sans-serif;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
-            font-family: "Josefin Sans", sans-serif;
 
             th,
             td {
@@ -144,22 +158,18 @@ main {
             flex-direction: row;
             justify-content: space-around;
 
-
             button {
                 border-radius: 4px;
                 background-image: linear-gradient(to right bottom, #00cf23, #009928, #046523, #0d3618, #000601);
-                border-radius: 7%;
                 color: #FFFFFF;
                 text-align: center;
                 font-size: 17px;
-                font-family: "Josefin Sans", sans-serif;
                 padding: 16px 23px;
                 margin: 5px 20px;
                 width: 197px;
                 box-shadow: 0px 1px 3px 3px #02500e;
                 transition: width 0.5s;
                 cursor: pointer;
-                margin: 5px;
 
                 &:hover {
                     background-image: linear-gradient(to top left, #00cf23, #009928, #046523, #0d3618, #000601);

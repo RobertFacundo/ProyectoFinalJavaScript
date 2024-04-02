@@ -11,36 +11,45 @@
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
 
-    h1{
+    h1 {
         font-family: h1;
         padding-top: 100px;
         font-weight: 100;
         text-align: center;
         font-size: 210px;
         background-image: linear-gradient(to bottom, #05ff2f, #07c63a, #02852b, #008225, #022708);
-        -webkit-background-clip: text; /* Para WebKit browsers (Safari/Chrome) */
-        background-clip: text; /* Para otros navegadores */
-        color: transparent; /* Ocultar el texto original */
+        -webkit-background-clip: text;
+        /* Para WebKit browsers (Safari/Chrome) */
+        background-clip: text;
+        /* Para otros navegadores */
+        color: transparent;
+        /* Ocultar el texto original */
     }
-    h2{
+
+    h2 {
         color: rgb(228, 235, 224);
         font-size: 30px;
-       font-weight: 400;
-       padding-top: 30px;
+        font-weight: 400;
+        padding-top: 30px;
     }
-    h4{
+
+    h4 {
         color: rgba(255, 255, 255, 0.644);
         font-size: 20px;
-     padding-top: 40px;
+        padding-top: 40px;
     }
 }
 
 .header {
-    background-image: url(../../multimedia/header.png);
-    // background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
-    min-height: 40vh;
-    box-shadow: 2px -6px 14px 3px #043b15;
+    position: relative; /* Importante para controlar el tamaño de la imagen */
+    height: 40vh;
+    img {
+        width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+        height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+        position: absolute; /* Posiciona la imagen absolutamente dentro del contenedor */
+        top: 0; /* La imagen comienza desde la parte superior */
+        left: 0; /* La imagen comienza desde la parte izquierda */
+    }
 }

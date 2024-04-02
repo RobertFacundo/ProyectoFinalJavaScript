@@ -56,12 +56,22 @@ body {
     padding-top: 40px; }
 
 .header {
-  background-image: url(../../multimedia/header.png);
-  background-size: cover;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
-  min-height: 40vh;
-  box-shadow: 2px -6px 14px 3px #043b15; }
+  position: relative;
+  /* Importante para controlar el tamaño de la imagen */
+  height: 40vh; }
+  .header img {
+    width: 100%;
+    /* La imagen ocupa todo el ancho del contenedor */
+    height: auto;
+    /* La altura se ajusta automáticamente para mantener la proporción */
+    position: absolute;
+    /* Posiciona la imagen absolutamente dentro del contenedor */
+    top: 0;
+    /* La imagen comienza desde la parte superior */
+    left: 0;
+    /* La imagen comienza desde la parte izquierda */ }
 
 main {
   width: 100vw;
@@ -135,26 +145,38 @@ main {
             opacity: 1;
             right: 0; }
   main .tupedido {
+    position: relative;
+    /* Importante para controlar el posicionamiento */
     width: 100vw;
     overflow: hidden;
     min-height: 60vh;
-    background-image: url(../../multimedia/tupedido.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* Ajusta el tamaño de la imagen */
+    border-radius: 10px;
     box-shadow: 2px -6px 14px 3px #046523;
     padding: 20px;
-    border-radius: 10px; }
+    font-family: "Josefin Sans", sans-serif; }
+    main .tupedido img {
+      position: absolute;
+      /* Posiciona la imagen absolutamente dentro del contenedor */
+      width: 100%;
+      /* La imagen ocupa todo el ancho del contenedor */
+      height: 100%;
+      /* La imagen ocupa todo el alto del contenedor */
+      object-fit: cover;
+      /* Ajusta la imagen para cubrir completamente el contenedor */
+      top: 0;
+      /* La imagen comienza desde la parte superior */
+      left: 0;
+      /* La imagen comienza desde la parte izquierda */
+      z-index: -1;
+      /* Coloca la imagen detrás de los otros elementos */ }
     main .tupedido h1 {
       font-size: 24px;
       margin-bottom: 20px;
-      text-align: center;
-      font-family: "Josefin Sans", sans-serif; }
+      text-align: center; }
     main .tupedido table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 20px;
-      font-family: "Josefin Sans", sans-serif; }
+      margin-bottom: 20px; }
       main .tupedido table th,
       main .tupedido table td {
         padding: 10px;
@@ -170,18 +192,15 @@ main {
       main .tupedido .botones button {
         border-radius: 4px;
         background-image: linear-gradient(to right bottom, #00cf23, #009928, #046523, #0d3618, #000601);
-        border-radius: 7%;
         color: #FFFFFF;
         text-align: center;
         font-size: 17px;
-        font-family: "Josefin Sans", sans-serif;
         padding: 16px 23px;
         margin: 5px 20px;
         width: 197px;
         box-shadow: 0px 1px 3px 3px #02500e;
         transition: width 0.5s;
-        cursor: pointer;
-        margin: 5px; }
+        cursor: pointer; }
         main .tupedido .botones button:hover {
           background-image: linear-gradient(to top left, #00cf23, #009928, #046523, #0d3618, #000601); }
 
