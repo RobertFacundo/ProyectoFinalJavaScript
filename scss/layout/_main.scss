@@ -3,7 +3,7 @@ main {
     overflow: hidden;
 
     .parallax-container2 {
-        background-image: url(../../multimedia/parallax/2.jpg);
+        background-image: url(../../multimedia/parallax/2.png);
         box-shadow: inset rgb(4, 101, 35) -9px 6px 20px 3px;
         display: grid;
         grid-template-columns: repeat(4, 1fr); // Puedes ajustar el número de columnas según sea necesario
@@ -103,7 +103,7 @@ main {
         width: 100vw;
         overflow: hidden;
         min-height: 60vh;
-        background-image: url(../../multimedia/tupedido.jpg);
+        background-image: url(../../multimedia/tupedido.png);
         background-repeat: no-repeat;
         background-size: cover;
         /* Ajusta el tamaño de la imagen */
