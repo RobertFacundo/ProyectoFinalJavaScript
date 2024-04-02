@@ -27,7 +27,7 @@ body {
   overflow: hidden;
   /*parallax effects:  */
   background-attachment: fixed;
-  background-image: url(../../multimedia/parallax/1.png);
+  background-image: url(https://images.unsplash.com/photo-1612692177120-847e15b2815d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -96,7 +96,7 @@ main {
       main .parallax-container2 .card p {
         font-family: "Josefin Sans", sans-serif;
         font-size: 18px;
-        color: white;
+        color: black;
         padding: 5px 23px;
         line-height: 24px; }
       main .parallax-container2 .card button {
@@ -187,7 +187,7 @@ main {
 
 .footer {
   background-attachment: fixed;
-  background-image: url(../../multimedia/parallax/1.png);
+  background-image: url(https://images.unsplash.com/photo-1612692177120-847e15b2815d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
   box-shadow: #046523 -9px 6px 20px 3px inset;
   text-align: center;
