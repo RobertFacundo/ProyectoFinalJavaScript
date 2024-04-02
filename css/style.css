@@ -29,7 +29,7 @@ body {
   background-attachment: fixed;
   background-image: url(../../multimedia/parallax/1.png);
   background-position: center;
-  background-size: center;
+  background-size: cover;
   text-align: center;
   font-family: "Josefin Sans", sans-serif; }
   .parallax-container h1 {
@@ -67,7 +67,7 @@ main {
   width: 100vw;
   overflow: hidden; }
   main .parallax-container2 {
-    background-image: url(../../multimedia/parallax/2.png);
+    background-image: linear-gradient(to right bottom, #1bef1f, #4ae84b, #65e267, #7bda7e, #8ed292);
     box-shadow: inset #046523 -9px 6px 20px 3px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -96,7 +96,7 @@ main {
       main .parallax-container2 .card p {
         font-family: "Josefin Sans", sans-serif;
         font-size: 18px;
-        color: #080808;
+        color: white;
         padding: 5px 23px;
         line-height: 24px; }
       main .parallax-container2 .card button {
@@ -188,16 +188,18 @@ main {
 .footer {
   background-attachment: fixed;
   background-image: url(../../multimedia/parallax/1.png);
+  background-size: cover;
   box-shadow: #046523 -9px 6px 20px 3px inset;
-  background-position: center;
-  background-size: center;
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
   width: 100vw;
-  height: 100%; }
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   .footer h1 {
     font-family: h1;
-    padding-top: 130px;
+    padding-top: auto;
     margin-bottom: 0;
     font-weight: 100;
     text-align: center;
@@ -213,7 +215,7 @@ main {
     align-items: center; }
     .footer ul li {
       margin-top: 50px;
-      margin-bottom: 300px;
+      margin-bottom: 130px;
       padding: 0; }
       .footer ul li a {
         text-decoration: none;

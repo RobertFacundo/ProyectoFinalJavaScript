@@ -3,7 +3,7 @@ main {
     overflow: hidden;
 
     .parallax-container2 {
-        background-image: url(../../multimedia/parallax/2.png);
+        background-image: linear-gradient(to right bottom, #1bef1f, #4ae84b, #65e267, #7bda7e, #8ed292);
         box-shadow: inset rgb(4, 101, 35) -9px 6px 20px 3px;
         display: grid;
         grid-template-columns: repeat(4, 1fr); // Puedes ajustar el número de columnas según sea necesario
@@ -42,7 +42,7 @@ main {
 
                 font-family: "Josefin Sans", sans-serif;
                 font-size: 18px;
-                color: rgb(8, 8, 8);
+                color: rgb(255, 255, 255);
                 padding: 5px 23px;
                 line-height: 24px;
             }
