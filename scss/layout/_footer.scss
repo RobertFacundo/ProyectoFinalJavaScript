@@ -2,26 +2,18 @@
     background-attachment: fixed;
     background-image: url(https://images.unsplash.com/photo-1612692177120-847e15b2815d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
+    background-color: white;
     box-shadow: rgb(4, 101, 35) -9px 6px 20px 3px inset;
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
     width: 100vw;
-    height: auto;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    h1 {
-        font-family: h1;
-        padding-top: auto;
-        margin-bottom: 0;
-        font-weight: 100;
-        text-align: center;
-        font-size: 210px;
-        background-image: linear-gradient(to bottom, #05ff2f, #07c63a, #02852b, #008225, #022708);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
+    .if {
+        padding: 20px;
     }
 
     ul {
@@ -42,16 +34,16 @@
                 color: rgba(255, 255, 255, 0.644);
                 transition: color 0.2s ease-in-out;
                 position: relative;
-            
+
                 &:hover {
                     color: #19ef52;
-            
+
                     .tooltip {
                         visibility: visible;
                         opacity: 1;
                     }
                 }
-            
+
                 .tooltip {
                     color: #000;
                     padding: 6px 10px;

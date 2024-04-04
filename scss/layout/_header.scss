@@ -11,20 +11,9 @@
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
 
-    h1 {
-        font-family: h1;
-        padding-top: 100px;
-        font-weight: 100;
-        text-align: center;
-        font-size: 210px;
-        background-image: linear-gradient(to bottom, #05ff2f, #07c63a, #02852b, #008225, #022708);
-        -webkit-background-clip: text;
-        /* Para WebKit browsers (Safari/Chrome) */
-        background-clip: text;
-        /* Para otros navegadores */
-        color: transparent;
-        /* Ocultar el texto original */
-    }
+   .logo{
+    padding-top: 50px;
+   }
 
     h2 {
         color: rgb(228, 235, 224);

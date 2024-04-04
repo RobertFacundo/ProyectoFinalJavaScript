@@ -32,19 +32,8 @@ body {
   background-size: cover;
   text-align: center;
   font-family: "Josefin Sans", sans-serif; }
-  .parallax-container h1 {
-    font-family: h1;
-    padding-top: 100px;
-    font-weight: 100;
-    text-align: center;
-    font-size: 210px;
-    background-image: linear-gradient(to bottom, #05ff2f, #07c63a, #02852b, #008225, #022708);
-    -webkit-background-clip: text;
-    /* Para WebKit browsers (Safari/Chrome) */
-    background-clip: text;
-    /* Para otros navegadores */
-    color: transparent;
-    /* Ocultar el texto original */ }
+  .parallax-container .logo {
+    padding-top: 50px; }
   .parallax-container h2 {
     color: #e4ebe0;
     font-size: 30px;
@@ -81,31 +70,31 @@ main {
     box-shadow: inset #046523 -9px 6px 20px 3px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100vw;
     gap: 3px;
     padding: 10px 10px; }
     main .parallax-container2 .card {
       width: 300px;
-      height: auto;
+      height: 550px;
       box-shadow: 0px 1px 20px 2px #023d0c;
       margin-top: 3px;
       margin-left: 20px;
       margin-bottom: 4px;
-      padding-bottom: 4px;
+      padding-bottom: 2px;
+      margin-bottom: 20px;
       border-radius: 10px;
       transition: all 0.4s ease-in-out; }
       main .parallax-container2 .card:hover {
         transform: scale(1.05);
         box-shadow: 1px 1px 16px 10px #025710; }
       main .parallax-container2 .card img {
-        width: 100%;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
         border-radius: 10px; }
       main .parallax-container2 .card p {
         font-family: "Josefin Sans", sans-serif;
-        font-size: 18px;
+        font-size: 13px;
         color: black;
         padding: 5px 23px;
         line-height: 24px; }
@@ -208,25 +197,17 @@ main {
   background-attachment: fixed;
   background-image: url(https://images.unsplash.com/photo-1612692177120-847e15b2815d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
+  background-color: white;
   box-shadow: #046523 -9px 6px 20px 3px inset;
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
   width: 100vw;
-  height: auto;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .footer h1 {
-    font-family: h1;
-    padding-top: auto;
-    margin-bottom: 0;
-    font-weight: 100;
-    text-align: center;
-    font-size: 210px;
-    background-image: linear-gradient(to bottom, #05ff2f, #07c63a, #02852b, #008225, #022708);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; }
+  .footer .if {
+    padding: 20px; }
   .footer ul {
     list-style: none;
     display: flex;
