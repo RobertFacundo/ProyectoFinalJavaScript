@@ -197,7 +197,7 @@ main {
         main .tupedido .botones button:hover {
           background-image: linear-gradient(to top left, #00cf23, #009928, #046523, #0d3618, #000601); }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
   main .parallax-container2 {
     display: block; }
     main .parallax-container2 .card {
