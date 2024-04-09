@@ -180,3 +180,17 @@ main {
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    main {
+        .parallax-container2 {
+            display: block;
+            .card {
+                width: calc(100% - 40px);
+                /* Ajusta el ancho de la tarjeta para que ocupe el ancho completo de la pantalla, dejando un espacio de margen de 20px a cada lado */
+                margin: 0 auto 20px;
+                /* Centra la tarjeta horizontalmente y agrega espacio inferior */
+            }
+        }
+    }
+}

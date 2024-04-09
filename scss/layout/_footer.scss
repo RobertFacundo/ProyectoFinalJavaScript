@@ -2,6 +2,7 @@
     background-attachment: fixed;
     background-image: url(https://images.unsplash.com/photo-1612692177120-847e15b2815d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
+    background-position: center;
     background-color: white;
     box-shadow: rgb(4, 101, 35) -9px 6px 20px 3px inset;
     text-align: center;
@@ -67,6 +68,7 @@
     .p-footer {
         width: 100vw;
         position: relative;
+        bottom: 0;
         font-size: 16px;
         margin-bottom: 20;
         padding-bottom: 20;
@@ -81,6 +83,16 @@
             &:hover {
                 color: #17c807;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .footer{
+
+        .if{
+         width: 500px;
         }
     }
 }

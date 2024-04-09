@@ -62,6 +62,10 @@ body {
     left: 0;
     /* La imagen comienza desde la parte izquierda */ }
 
+@media screen and (max-width: 1000px) {
+  .parallax-container .logo {
+    width: 500px; } }
+
 main {
   width: 100vw;
   overflow: hidden; }
@@ -193,10 +197,20 @@ main {
         main .tupedido .botones button:hover {
           background-image: linear-gradient(to top left, #00cf23, #009928, #046523, #0d3618, #000601); }
 
+@media screen and (max-width: 1000px) {
+  main .parallax-container2 {
+    display: block; }
+    main .parallax-container2 .card {
+      width: calc(100% - 40px);
+      /* Ajusta el ancho de la tarjeta para que ocupe el ancho completo de la pantalla, dejando un espacio de margen de 20px a cada lado */
+      margin: 0 auto 20px;
+      /* Centra la tarjeta horizontalmente y agrega espacio inferior */ } }
+
 .footer {
   background-attachment: fixed;
   background-image: url(https://images.unsplash.com/photo-1612692177120-847e15b2815d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
+  background-position: center;
   background-color: white;
   box-shadow: #046523 -9px 6px 20px 3px inset;
   text-align: center;
@@ -247,6 +261,7 @@ main {
   .footer .p-footer {
     width: 100vw;
     position: relative;
+    bottom: 0;
     font-size: 16px;
     margin-bottom: 20;
     padding-bottom: 20;
@@ -258,3 +273,7 @@ main {
       text-decoration: none; }
       .footer .p-footer a:hover {
         color: #17c807; }
+
+@media screen and (max-width: 1000px) {
+  .footer .if {
+    width: 500px; } }

@@ -42,3 +42,14 @@
         left: 0; /* La imagen comienza desde la parte izquierda */
     }
 }
+
+
+@media screen and (max-width: 1000px) {
+
+    .parallax-container{
+
+        .logo{
+         width: 500px;
+        }
+    }
+}
