@@ -29,7 +29,7 @@
 
 //misma pero utilizando funcion
 
-function pedirNombre() {
+function nombreIngresado() {
     let nombre;
     for (;;) {
         nombre = prompt("¡Hola! Bienvenido a la primer pre-entrega del curso de JavaScript. \n\n Antes de continuar, por favor, ingresa un nombre:");
@@ -50,7 +50,7 @@ function pedirNombre() {
     return nombre;                          // return para poder utilizar el nombre elegido fuera de la funcion
 }
 
-let nombre = pedirNombre();
+let nombre = nombreIngresado();
 
 let mensaje = document.querySelector("h4"); //querySelector para seleccionar el elemento h4 del header
 mensaje.textContent = "¡Scrollea sin culpa, " + nombre + "!";  //textContent para poder cambiar el contenido del texto
