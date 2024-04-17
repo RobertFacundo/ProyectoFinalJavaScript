@@ -29,9 +29,39 @@
 
 //misma pero utilizando funcion
 
+// function nombreIngresado() {
+//     let nombre;
+//     for (;;) {
+//         nombre = prompt("¡Hola! Bienvenido a la primer pre-entrega del curso de JavaScript. \n\n Antes de continuar, por favor, ingresa un nombre:");
+    
+//         if (nombre && /^[A-Za-z]+$/.test(nombre) && nombre.length > 3) { 
+//             alert("Muchas Gracias, adelante");
+//             break;
+//         }
+    
+//         if (!nombre) {
+//             alert("Por favor, ingresa un nombre válido.");
+//         } else if (!/^[A-Za-z]+$/.test(nombre)) {   // esta linea verifica si el nombre ingresado contiene algun caracter que no sea letra
+//             alert("Nonono, un nombre contiene solo letras, no me mientas");
+//         } else if (nombre.length <= 3) {      // esta linea verifica si el nombre ingresado contiene tres letras o menos
+//             alert("Ni un sobrenombre tiene tan pocas letras. Por favor, ingresa un nombre de verdad.");
+//         }
+//     }
+//     return nombre;                          // return para poder utilizar el nombre elegido fuera de la funcion
+// }
+
+// let nombre = nombreIngresado();
+
+// let mensaje = document.querySelector("h4"); //querySelector para seleccionar el elemento h4 del header
+// mensaje.textContent = "¡Scrollea sin culpa, " + nombre + "!";  //textContent para poder cambiar el contenido del texto
+
+//-----------------------------------------------------------------
+
+// UTILIZANDO !!WHILE!! A PEDIDO PARA APROBAR PRE ENTREGA YFP
+
 function nombreIngresado() {
     let nombre;
-    for (;;) {
+    while (true) {
         nombre = prompt("¡Hola! Bienvenido a la primer pre-entrega del curso de JavaScript. \n\n Antes de continuar, por favor, ingresa un nombre:");
     
         if (nombre && /^[A-Za-z]+$/.test(nombre) && nombre.length > 3) { 
@@ -41,21 +71,22 @@ function nombreIngresado() {
     
         if (!nombre) {
             alert("Por favor, ingresa un nombre válido.");
-        } else if (!/^[A-Za-z]+$/.test(nombre)) {   // esta linea verifica si el nombre ingresado contiene algun caracter que no sea letra
+        } else if (!/^[A-Za-z]+$/.test(nombre)) {
             alert("Nonono, un nombre contiene solo letras, no me mientas");
-        } else if (nombre.length <= 3) {      // esta linea verifica si el nombre ingresado contiene tres letras o menos
+        } else if (nombre.length <= 3) {
             alert("Ni un sobrenombre tiene tan pocas letras. Por favor, ingresa un nombre de verdad.");
         }
     }
-    return nombre;                          // return para poder utilizar el nombre elegido fuera de la funcion
+    return nombre;
 }
 
 let nombre = nombreIngresado();
 
-let mensaje = document.querySelector("h4"); //querySelector para seleccionar el elemento h4 del header
-mensaje.textContent = "¡Scrollea sin culpa, " + nombre + "!";  //textContent para poder cambiar el contenido del texto
+let mensaje = document.querySelector("h4");
+mensaje.textContent = "¡Scrollea sin culpa, " + nombre + "!";
 
-//-----------------------------------------------------------------
+
+//--------------------------------------------------------------------
 
 // Utilizando do...while
 
