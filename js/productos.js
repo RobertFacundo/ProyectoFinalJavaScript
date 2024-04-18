@@ -1,4 +1,4 @@
-//arrays de productos
+//arrays de productos con clase constructora
 
 class Producto {
     constructor(nombre, precio) {
@@ -27,9 +27,11 @@ const productosArray = [
     new Producto("Agua Mineral de 2.25L", "3100")
 ];
 
-productos.forEach(producto => {
+productosArray.forEach(producto => {
     console.log(`Producto: ${producto.nombre}, Precio: $${producto.precio}`);
 });
+
+
 
 
 
