@@ -1,3 +1,5 @@
+//arrays de productos
+
 class Producto {
     constructor(nombre, precio) {
         this.nombre = nombre;
@@ -6,7 +8,7 @@ class Producto {
 }
 
 
-const productos = [
+const productosArray = [
     new Producto("Pizza Margarita", "4000"),
     new Producto("Pizza de prosciuto y hongos", "4300"),
     new Producto("Pepperoni pizza", "4100"),
@@ -28,3 +30,7 @@ const productos = [
 productos.forEach(producto => {
     console.log(`Producto: ${producto.nombre}, Precio: $${producto.precio}`);
 });
+
+
+
+
