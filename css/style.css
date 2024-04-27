@@ -51,6 +51,7 @@ body {
   /* Importante para controlar el tamaño de la imagen */
   height: 300px; }
   .header img {
+    z-index: 0;
     width: 100%;
     /* La imagen ocupa todo el ancho del contenedor */
     height: 300px;
