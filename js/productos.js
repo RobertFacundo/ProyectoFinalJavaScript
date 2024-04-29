@@ -2,7 +2,7 @@ class Producto {
     constructor(nombre, precio, esComida) {
         this.nombre = nombre;
         this.precio = parseInt(precio, 10);
-        this.esComida = esComida; // True si es comida, False si es bebida
+        this.esComida = esComida; 
     }
 }
 

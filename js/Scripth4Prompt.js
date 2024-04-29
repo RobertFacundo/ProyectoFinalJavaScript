@@ -62,7 +62,7 @@
 function nombreIngresado() {
     let nombre;
     while (true) {
-        nombre = prompt("¡Hola! Bienvenido a la primer pre-entrega del curso de JavaScript. \n\n Antes de continuar, por favor, ingresa un nombre:");
+        nombre = prompt("¡Hola! Bienvenido a la segunda pre-entrega del curso de JavaScript. \n\n Antes de continuar, por favor, ingresa un nombre:");
     
         if (nombre && /^[A-Za-z]+$/.test(nombre) && nombre.length > 3) { 
             alert("Muchas Gracias, adelante");
