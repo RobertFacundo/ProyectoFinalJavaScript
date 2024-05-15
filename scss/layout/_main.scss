@@ -5,97 +5,169 @@ main {
     .parallax-container2 {
         background-image: linear-gradient(to right bottom, #1bef1f, #4ae84b, #65e267, #7bda7e, #8ed292);
         box-shadow: inset rgb(4, 101, 35) -9px 6px 20px 3px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); // Puedes ajustar el número de columnas según sea necesario
 
-        width: 100vw;
-        gap: 3px; // Espacio entre las tarjetas
-        padding: 10px 10px; // Ajusta el relleno del contenedor según sea necesario
+        .iconos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px 30px;
+            padding-top: 5px;
 
+            .display {
 
-        .card {
-            width: 300px; // O ajusta el tamaño según lo necesites
-            height: 550px; // O ajusta la altura según lo necesites
-            box-shadow: 0px 1px 20px 2px rgb(2, 61, 12); // Añade sombra según sea necesario
-            margin-top: 3px;
-            margin-left: 20px;
-            margin-bottom: 4px;
-            padding-bottom: 2px;
-            margin-bottom: 20px;
-
-            border-radius: 10px; // Ajusta el radio de borde según sea necesario
-            transition: all 0.4s ease-in-out; // Agrega una transición al hacer hover
-
-            &:hover {
-                transform: scale(1.05); // Aumenta el tamaño al hacer hover
-                box-shadow: 1px 1px 16px 10px rgb(2, 87, 16); // Añade sombra según sea necesario
-            }
-
-            img {
-                width: 300px;
-                height: 300px;
-                overflow: hidden;
-                border-radius: 10px; // Ajusta el radio de borde según sea necesario
-            }
-
-
-            p {
-
-                font-family: "Josefin Sans", sans-serif;
-                font-size: 13px;
-                color: rgb(0, 0, 0);
-                padding: 5px 23px;
-                line-height: 24px;
-            }
-
-            button {
-                display: inline-block;
-                border-radius: 4px;
-                background-image: linear-gradient(to right bottom, #00cf23, #009928, #046523, #0d3618, #000601);
-                border: none;
-                border-radius: 7%;
-                color: #FFFFFF;
-                text-align: center;
-                font-size: 17px;
-                font-family: "Josefin Sans", sans-serif;
-                padding: 16px 23px;
-                width: 197px;
-                box-shadow: 0px 1px 3px 3px #02500e;
-                transition: width 0.5s;
-                cursor: pointer;
-                margin: 5px;
-
-                span {
-                    cursor: pointer;
-                    display: inline-block;
-                    position: relative;
-                    transition: 0.5s;
-
-                    &:after {
-                        content: '+';
-                        position: absolute;
-                        opacity: 0;
-                        top: 0;
-                        right: -15px;
-                        transition: 0.5s;
-                    }
+                .fa-table-cells {
+                    @extend %botones;
                 }
+
+                .fa-list {
+                    @extend %botones;
+                }
+            }
+
+            .filtros {
+
+
+                .fa-bottle-water,
+                .fa-pizza-slice {
+                    @extend %botones;
+                }
+
+                .byc {
+                    @extend %botones;
+                }
+            }
+
+        }
+
+        .contenedor-productos {
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); // Puedes ajustar el número de columnas según sea necesario
+
+            width: 100vw;
+            gap: 3px; // Espacio entre las tarjetas
+            padding: 10px 10px; // Ajusta el relleno del contenedor según sea necesario
+
+            .card {
+                width: 300px; // O ajusta el tamaño según lo necesites
+                height: 500px; // O ajusta la altura según lo necesites
+                box-shadow: 0px 1px 20px 2px rgb(2, 61, 12); // Añade sombra según sea necesario
+                margin-top: 3px;
+                margin-left: 20px;
+                margin-bottom: 4px;
+                margin-bottom: 20px;
+
+                border-radius: 10px; // Ajusta el radio de borde según sea necesario
+                transition: all 0.4s ease-in-out; // Agrega una transición al hacer hover
 
                 &:hover {
-                    transition: background-image 0.5s, box-shadow 0.5s;
+                    transform: scale(1.05); // Aumenta el tamaño al hacer hover
+                    box-shadow: 1px 1px 16px 10px rgb(2, 87, 16); // Añade sombra según sea necesario
                 }
 
-                &:hover span {
-                    padding-right: 20px;
+                img {
+                    width: 100%;
+                    height: 250px !important;
+                    overflow: hidden;
+                    border-radius: 10px; // Ajusta el radio de borde según sea necesario
+                }
 
-                    &:after {
-                        opacity: 1;
-                        right: 0;
+              
+                .texto{
+                    font-family: "Josefin Sans", sans-serif;
+                    font-size: 13px;
+                    color: rgb(0, 0, 0);
+                    padding: 5px 23px;
+                    line-height: 24px;
+                    h3{
+                        padding: 10px;
+                        font-size: 16px;
                     }
                 }
+
+
+                button {
+                    display: inline-block;
+                    border-radius: 4px;
+                    background-color: rgba(255, 255, 255, 0.701);
+                    border: none;
+                    border-radius: 7%;
+                    color: #111010;
+                    text-align: center;
+                    font-size: 17px;
+                    font-family: "Josefin Sans", sans-serif;
+                    padding: 16px 23px;
+                    width: 197px;
+                    box-shadow: 0px 1px 3px 3px #02500e;
+                    transition: width 0.5s;
+                    cursor: pointer;
+                    margin: 5px;
+
+                    span {
+                        cursor: pointer;
+                        display: inline-block;
+                        position: relative;
+                        transition: 0.5s;
+
+                        &:after {
+                            content: '+';
+                            position: absolute;
+                            opacity: 0;
+                            top: 0;
+                            right: -15px;
+                            transition: 0.5s;
+                        }
+                    }
+
+                    &:hover {
+                        transition: box-shadow 0.5s;
+                    }
+
+                    &:hover span {
+                        padding-right: 20px;
+
+                        &:after {
+                            opacity: 1;
+                            right: 0;
+                        }
+                    }
+                }
+
+
             }
+        }
 
+        .lista {
+            display: block;
+            margin-left: 150px;
 
+            .card {
+                width: 79%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                height: 250px;
+                align-items: center;
+                font-size: 23px;
+                padding-right: 13px;
+
+                section {
+                    flex-direction: column;
+                    width: 400px;
+
+                    p {
+                        font-size: 20px;
+                        padding: 10px;
+                    }
+
+                }
+                img {
+                    width: 250px;
+                    height: 250px;
+                    overflow: hidden;
+                    border-radius: 10px; // Ajusta el radio de borde según sea necesario
+                }
+            }
         }
 
     }
@@ -162,19 +234,20 @@ main {
 
             button {
                 border-radius: 4px;
-                background-image: linear-gradient(to right bottom, #00cf23, #009928, #046523, #0d3618, #000601);
-                color: #FFFFFF;
+                background-color: rgba(255, 255, 255, 0.557);
+                color: #1c1b1b;
                 text-align: center;
                 font-size: 17px;
                 padding: 16px 23px;
                 margin: 5px 20px;
                 width: 197px;
                 box-shadow: 0px 1px 3px 3px #02500e;
-                transition: width 0.5s;
+                transition: all 0.2s linear;
+                transform: translateY(130px);
                 cursor: pointer;
 
                 &:hover {
-                    background-image: linear-gradient(to top left, #00cf23, #009928, #046523, #0d3618, #000601);
+                    background-color: rgba(255, 255, 255, 0.701);
                 }
             }
         }
@@ -185,6 +258,7 @@ main {
     main {
         .parallax-container2 {
             display: block;
+
             .card {
                 width: calc(100% - 40px);
                 /* Ajusta el ancho de la tarjeta para que ocupe el ancho completo de la pantalla, dejando un espacio de margen de 20px a cada lado */

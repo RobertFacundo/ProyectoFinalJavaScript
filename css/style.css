@@ -21,6 +21,18 @@ body {
   font-family: 'h1';
   src: url("../../resources/SignalineScript-DO15d.ttf") format("truetype"); }
 
+main .parallax-container2 .iconos .display .fa-table-cells, main .parallax-container2 .iconos .display .fa-list, main .parallax-container2 .iconos .filtros .fa-bottle-water,
+main .parallax-container2 .iconos .filtros .fa-pizza-slice, main .parallax-container2 .iconos .filtros .byc {
+  font-size: 39px;
+  color: rgba(255, 255, 255, 0.701);
+  padding-right: 13px;
+  margin: 5px 30px;
+  transition: color 0.2s linear;
+  cursor: pointer; }
+  main .parallax-container2 .iconos .display .fa-table-cells:hover, main .parallax-container2 .iconos .display .fa-list:hover, main .parallax-container2 .iconos .filtros .fa-bottle-water:hover,
+  main .parallax-container2 .iconos .filtros .fa-pizza-slice:hover, main .parallax-container2 .iconos .filtros .byc:hover {
+    color: white; }
+
 .parallax-container {
   min-height: 100vh;
   width: 100vw;
@@ -72,72 +84,104 @@ main {
   overflow: hidden; }
   main .parallax-container2 {
     background-image: linear-gradient(to right bottom, #1bef1f, #4ae84b, #65e267, #7bda7e, #8ed292);
-    box-shadow: inset #046523 -9px 6px 20px 3px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 100vw;
-    gap: 3px;
-    padding: 10px 10px; }
-    main .parallax-container2 .card {
-      width: 300px;
-      height: 550px;
-      box-shadow: 0px 1px 20px 2px #023d0c;
-      margin-top: 3px;
-      margin-left: 20px;
-      margin-bottom: 4px;
-      padding-bottom: 2px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      transition: all 0.4s ease-in-out; }
-      main .parallax-container2 .card:hover {
-        transform: scale(1.05);
-        box-shadow: 1px 1px 16px 10px #025710; }
-      main .parallax-container2 .card img {
+    box-shadow: inset #046523 -9px 6px 20px 3px; }
+    main .parallax-container2 .iconos {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 10px 30px;
+      padding-top: 5px; }
+    main .parallax-container2 .contenedor-productos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      width: 100vw;
+      gap: 3px;
+      padding: 10px 10px; }
+      main .parallax-container2 .contenedor-productos .card {
         width: 300px;
-        height: 300px;
-        overflow: hidden;
-        border-radius: 10px; }
-      main .parallax-container2 .card p {
-        font-family: "Josefin Sans", sans-serif;
-        font-size: 13px;
-        color: black;
-        padding: 5px 23px;
-        line-height: 24px; }
-      main .parallax-container2 .card button {
-        display: inline-block;
-        border-radius: 4px;
-        background-image: linear-gradient(to right bottom, #00cf23, #009928, #046523, #0d3618, #000601);
-        border: none;
-        border-radius: 7%;
-        color: #FFFFFF;
-        text-align: center;
-        font-size: 17px;
-        font-family: "Josefin Sans", sans-serif;
-        padding: 16px 23px;
-        width: 197px;
-        box-shadow: 0px 1px 3px 3px #02500e;
-        transition: width 0.5s;
-        cursor: pointer;
-        margin: 5px; }
-        main .parallax-container2 .card button span {
-          cursor: pointer;
+        height: 500px;
+        box-shadow: 0px 1px 20px 2px #023d0c;
+        margin-top: 3px;
+        margin-left: 20px;
+        margin-bottom: 4px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        transition: all 0.4s ease-in-out; }
+        main .parallax-container2 .contenedor-productos .card:hover {
+          transform: scale(1.05);
+          box-shadow: 1px 1px 16px 10px #025710; }
+        main .parallax-container2 .contenedor-productos .card img {
+          width: 100%;
+          height: 250px !important;
+          overflow: hidden;
+          border-radius: 10px; }
+        main .parallax-container2 .contenedor-productos .card .texto {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 13px;
+          color: black;
+          padding: 5px 23px;
+          line-height: 24px; }
+          main .parallax-container2 .contenedor-productos .card .texto h3 {
+            padding: 10px;
+            font-size: 16px; }
+        main .parallax-container2 .contenedor-productos .card button {
           display: inline-block;
-          position: relative;
-          transition: 0.5s; }
-          main .parallax-container2 .card button span:after {
-            content: '+';
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -15px;
+          border-radius: 4px;
+          background-color: rgba(255, 255, 255, 0.701);
+          border: none;
+          border-radius: 7%;
+          color: #111010;
+          text-align: center;
+          font-size: 17px;
+          font-family: "Josefin Sans", sans-serif;
+          padding: 16px 23px;
+          width: 197px;
+          box-shadow: 0px 1px 3px 3px #02500e;
+          transition: width 0.5s;
+          cursor: pointer;
+          margin: 5px; }
+          main .parallax-container2 .contenedor-productos .card button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
             transition: 0.5s; }
-        main .parallax-container2 .card button:hover {
-          transition: background-image 0.5s, box-shadow 0.5s; }
-        main .parallax-container2 .card button:hover span {
-          padding-right: 20px; }
-          main .parallax-container2 .card button:hover span:after {
-            opacity: 1;
-            right: 0; }
+            main .parallax-container2 .contenedor-productos .card button span:after {
+              content: '+';
+              position: absolute;
+              opacity: 0;
+              top: 0;
+              right: -15px;
+              transition: 0.5s; }
+          main .parallax-container2 .contenedor-productos .card button:hover {
+            transition: box-shadow 0.5s; }
+          main .parallax-container2 .contenedor-productos .card button:hover span {
+            padding-right: 20px; }
+            main .parallax-container2 .contenedor-productos .card button:hover span:after {
+              opacity: 1;
+              right: 0; }
+    main .parallax-container2 .lista {
+      display: block;
+      margin-left: 150px; }
+      main .parallax-container2 .lista .card {
+        width: 79%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 250px;
+        align-items: center;
+        font-size: 23px;
+        padding-right: 13px; }
+        main .parallax-container2 .lista .card section {
+          flex-direction: column;
+          width: 400px; }
+          main .parallax-container2 .lista .card section p {
+            font-size: 20px;
+            padding: 10px; }
+        main .parallax-container2 .lista .card img {
+          width: 250px;
+          height: 250px;
+          overflow: hidden;
+          border-radius: 10px; }
   main .tupedido {
     position: relative;
     /* Importante para controlar el posicionamiento */
@@ -185,18 +229,19 @@ main {
       justify-content: space-around; }
       main .tupedido .botones button {
         border-radius: 4px;
-        background-image: linear-gradient(to right bottom, #00cf23, #009928, #046523, #0d3618, #000601);
-        color: #FFFFFF;
+        background-color: rgba(255, 255, 255, 0.557);
+        color: #1c1b1b;
         text-align: center;
         font-size: 17px;
         padding: 16px 23px;
         margin: 5px 20px;
         width: 197px;
         box-shadow: 0px 1px 3px 3px #02500e;
-        transition: width 0.5s;
+        transition: all 0.2s linear;
+        transform: translateY(130px);
         cursor: pointer; }
         main .tupedido .botones button:hover {
-          background-image: linear-gradient(to top left, #00cf23, #009928, #046523, #0d3618, #000601); }
+          background-color: rgba(255, 255, 255, 0.701); }
 
 @media screen and (max-width: 1300px) {
   main .parallax-container2 {
