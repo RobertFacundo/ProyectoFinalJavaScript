@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <h3>${producto.nombre}</h3>
             <p>${producto.desc}</p>
             <p>Precio: <b>$${producto.precio}</b></p> </section>
-            <button class="agregar-al-carrito"> <span>Agregar pedido</span></button>
+            <button class="agregar-al-carrito"> <span class="agregar-al-carrito">Agregar pedido</span></button>
         `;
             contenedorProductos.appendChild(div);
         });
