@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pizza Margarita",
+        "precio": 4000,
+        "esComida": true,
+        "img": "./multimedia/cards/pizzamargarita.jpg",
+        "desc": "Clásica italiana que lleva salsa de tomate, mozzarella fresca y hojas de albahaca fresca"
+    },
+    {
+        "id": 2,
+        "nombre": "Pizza de prosciuto y hongos",
+        "precio": 4300,
+        "esComida": true,
+        "img": "./multimedia/cards/Pizza-prosciutto-e-funghi.jpg",
+        "desc": "Combinación de salsa de tomate, queso mozzarella, jamón (prosciutto) y champiñones"
+    },
+    {
+        "id": 3,
+        "nombre": "Pepperoni pizza",
+        "precio": 4100,
+        "esComida": true,
+        "img": "./multimedia/cards/pepperoni.jpg",
+        "desc": "Esta pizza lleva salsa de tomate, queso mozzarella y rodajas de pepperoni (salami picante)"
+    },
+    {
+        "id": 4,
+        "nombre": "Hamburguesa Doble Bacon",
+        "precio": 6600,
+        "esComida": true,
+        "img": "./multimedia/cards/HamburguesaDobleBacon.png",
+        "desc": "Dos medallones de carne vacuna, queso cheddar fundido y en fetas, bacon crujiente y cebolla en trozos"
+    },
+    {
+        "id": 5,
+        "nombre": "Hamburguesa Doble Cheddar",
+        "precio": 6900,
+        "esComida": true,
+        "img": "./multimedia/cards/cheddarbacon.png",
+        "desc": "Clásica hamburguesa con queso cheddar en feta y fundido, dos tiras de bacon enteras, cebolla grillada en nuestro inigualable pan con semillas de sésamo"
+    },
+    {
+        "id": 6,
+        "nombre": "Hamburguesa Crispy Chicken",
+        "precio": 6700,
+        "esComida": true,
+        "img": "./multimedia/cards/crispychicken.png",
+        "desc": "Pollo sazonado y crujiente, cubierto con obligatorio queso derretido, apilado sobre panes suaves con cebolla, aguacate, lechuga, tomate y mayonesa de ajo"
+    },
+    {
+        "id": 7,
+        "nombre": "Pasta con crema de hongos",
+        "precio": 7900,
+        "esComida": true,
+        "img": "./multimedia/cards/Espaguetis-con-hongos.jpg",
+        "desc": "Plato de fetuccini con crema de hongos portobello"
+    },
+    {
+        "id": 8,
+        "nombre": "Empanadas de carne (1/2 docena)",
+        "precio": 7000,
+        "esComida": true,
+        "img": "./multimedia/cards/empanadas-de-carne-cortada-a-cuchillo-4.jpg",
+        "desc": "Riquísimas empanadas con carne cortada a cuchillo"
+    },
+    {
+        "id": 9,
+        "nombre": "Empanadas de jamón y queso (1/2 docena)",
+        "precio": 7000,
+        "esComida": true,
+        "img": "./multimedia/cards/empanadajamonyqueso.jpg",
+        "desc": "Sabrosas empanadas de jamón y queso"
+    },
+    {
+        "id": 10,
+        "nombre": "California Roll (12 rolls)",
+        "precio": 8000,
+        "esComida": true,
+        "img": "./multimedia/cards/CALIFORNIA-roll.jpg",
+        "desc": "Arroz, alga nori, aguacate, pepino, surimi, sésamo"
+    },
+    {
+        "id": 11,
+        "nombre": "Filadelfia Roll (12 rolls)",
+        "precio": 8100,
+        "esComida": true,
+        "img": "./multimedia/cards/FILADELFIAroll.jpg",
+        "desc": "Arroz, alga nori, aguacate, pepino, salmón, queso crema, sésamo"
+    },
+    {
+        "id": 12,
+        "nombre": "Ramen",
+        "precio": 7900,
+        "esComida": true,
+        "img": "./multimedia/cards/ramen.jpeg",
+        "desc": "Caldo de cerdo en cocción lenta, miso, noodles, huevo poche, bondiola braseada, verdeo, boniato crocante, alga kombu, pickles de cebolla morada, sriracha"
+    },
+    {
+        "id": 13,
+        "nombre": "Mirinda 2L",
+        "precio": 3000,
+        "esComida": false,
+        "img": "./multimedia/cards/mirinda.png",
+        "desc": ""
+    },
+    {
+        "id": 14,
+        "nombre": "Sprite 1.5L",
+        "precio": 2500,
+        "esComida": false,
+        "img": "./multimedia/cards/sprite.png",
+        "desc": ""
+    },
+    {
+        "id": 15,
+        "nombre": "Coca-cola de 2.25L",
+        "precio": 3100,
+        "esComida": false,
+        "img": "./multimedia/cards/cocacola.png",
+        "desc": ""
+    },
+    {
+        "id": 16,
+        "nombre": "Agua Mineral de 2.25L",
+        "precio": 3100,
+        "esComida": false,
+        "img": "./multimedia/cards/agua.png",
+        "desc": ""
+    }
+]
