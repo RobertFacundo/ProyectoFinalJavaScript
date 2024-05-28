@@ -22,7 +22,8 @@ body {
   src: url("../../resources/SignalineScript-DO15d.ttf") format("truetype"); }
 
 main .parallax-container2 .iconos .display .fa-table-cells, main .parallax-container2 .iconos .display .fa-list, main .parallax-container2 .iconos .filtros .fa-bottle-water,
-main .parallax-container2 .iconos .filtros .fa-pizza-slice, main .parallax-container2 .iconos .filtros .byc {
+main .parallax-container2 .iconos .filtros .fa-pizza-slice, main .parallax-container2 .iconos .filtros .byc, main .tupedido .botones button .fa-trash-can,
+main .tupedido .botones button .fa-check {
   font-size: 39px;
   color: rgba(255, 255, 255, 0.701);
   padding-right: 13px;
@@ -30,7 +31,8 @@ main .parallax-container2 .iconos .filtros .fa-pizza-slice, main .parallax-conta
   transition: color 0.2s linear;
   cursor: pointer; }
   main .parallax-container2 .iconos .display .fa-table-cells:hover, main .parallax-container2 .iconos .display .fa-list:hover, main .parallax-container2 .iconos .filtros .fa-bottle-water:hover,
-  main .parallax-container2 .iconos .filtros .fa-pizza-slice:hover, main .parallax-container2 .iconos .filtros .byc:hover {
+  main .parallax-container2 .iconos .filtros .fa-pizza-slice:hover, main .parallax-container2 .iconos .filtros .byc:hover, main .tupedido .botones button .fa-trash-can:hover,
+  main .tupedido .botones button .fa-check:hover {
     color: white; }
 
 .parallax-container {
@@ -184,7 +186,6 @@ main {
           border-radius: 10px; }
   main .tupedido {
     position: relative;
-    /* Importante para controlar el posicionamiento */
     width: 100vw;
     overflow: hidden;
     min-height: 60vh;
@@ -194,19 +195,12 @@ main {
     font-family: "Josefin Sans", sans-serif; }
     main .tupedido img {
       position: absolute;
-      /* Posiciona la imagen absolutamente dentro del contenedor */
       width: 100%;
-      /* La imagen ocupa todo el ancho del contenedor */
       height: 100%;
-      /* La imagen ocupa todo el alto del contenedor */
       object-fit: cover;
-      /* Ajusta la imagen para cubrir completamente el contenedor */
       top: 0;
-      /* La imagen comienza desde la parte superior */
       left: 0;
-      /* La imagen comienza desde la parte izquierda */
-      z-index: -1;
-      /* Coloca la imagen detrás de los otros elementos */ }
+      z-index: -1; }
     main .tupedido h1 {
       font-size: 24px;
       margin-bottom: 20px;
@@ -223,34 +217,35 @@ main {
         background-color: #f1f1f14e; }
       main .tupedido table tfoot td {
         font-weight: bold; }
+      main .tupedido table tbody td button {
+        background-color: transparent;
+        border: none; }
+        main .tupedido table tbody td button .fa-solid,
+        main .tupedido table tbody td button .fa-xmark {
+          font-size: 23px;
+          color: rgba(255, 255, 255, 0.701);
+          transition: color 0.2s linear;
+          cursor: pointer; }
+          main .tupedido table tbody td button .fa-solid:hover,
+          main .tupedido table tbody td button .fa-xmark:hover {
+            color: white; }
     main .tupedido .botones {
       display: flex;
       flex-direction: row;
-      justify-content: space-around; }
+      justify-content: center; }
       main .tupedido .botones button {
-        border-radius: 4px;
-        background-color: rgba(255, 255, 255, 0.557);
-        color: #1c1b1b;
-        text-align: center;
-        font-size: 17px;
-        padding: 16px 23px;
-        margin: 5px 20px;
-        width: 197px;
-        box-shadow: 0px 1px 3px 3px #02500e;
-        transition: all 0.2s linear;
-        transform: translateY(130px);
-        cursor: pointer; }
-        main .tupedido .botones button:hover {
-          background-color: rgba(255, 255, 255, 0.701); }
+        background-color: transparent;
+        border: none; }
 
 @media screen and (max-width: 1300px) {
   main .parallax-container2 {
     display: block; }
     main .parallax-container2 .card {
       width: calc(100% - 40px);
-      /* Ajusta el ancho de la tarjeta para que ocupe el ancho completo de la pantalla, dejando un espacio de margen de 20px a cada lado */
-      margin: 0 auto 20px;
-      /* Centra la tarjeta horizontalmente y agrega espacio inferior */ } }
+      margin: 0 auto 20px; } }
+
+.my-swal-font {
+  font-family: "Josefin Sans", sans-serif; }
 
 .footer {
   background-attachment: fixed;

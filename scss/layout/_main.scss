@@ -42,23 +42,23 @@ main {
         .contenedor-productos {
 
             display: grid;
-            grid-template-columns: repeat(4, 1fr); // Puedes ajustar el número de columnas según sea necesario
+            grid-template-columns: repeat(4, 1fr); 
 
             width: 100vw;
-            gap: 3px; // Espacio entre las tarjetas
-            padding: 10px 10px; // Ajusta el relleno del contenedor según sea necesario
+            gap: 3px; 
+            padding: 10px 10px; 
 
             .card {
-                width: 300px; // O ajusta el tamaño según lo necesites
-                height: 500px; // O ajusta la altura según lo necesites
-                box-shadow: 0px 1px 20px 2px rgb(2, 61, 12); // Añade sombra según sea necesario
+                width: 300px; 
+                height: 500px; 
+                box-shadow: 0px 1px 20px 2px rgb(2, 61, 12); 
                 margin-top: 3px;
                 margin-left: 20px;
                 margin-bottom: 4px;
                 margin-bottom: 20px;
 
-                border-radius: 10px; // Ajusta el radio de borde según sea necesario
-                transition: all 0.4s ease-in-out; // Agrega una transición al hacer hover
+                border-radius: 10px; 
+                transition: all 0.4s ease-in-out; 
 
                 &:hover {
                     transform: scale(1.05); // Aumenta el tamaño al hacer hover
@@ -69,17 +69,18 @@ main {
                     width: 100%;
                     height: 250px !important;
                     overflow: hidden;
-                    border-radius: 10px; // Ajusta el radio de borde según sea necesario
+                    border-radius: 10px; 
                 }
 
-              
-                .texto{
+
+                .texto {
                     font-family: "Josefin Sans", sans-serif;
                     font-size: 13px;
                     color: rgb(0, 0, 0);
                     padding: 5px 23px;
                     line-height: 24px;
-                    h3{
+
+                    h3 {
                         padding: 10px;
                         font-size: 16px;
                     }
@@ -161,21 +162,23 @@ main {
                     }
 
                 }
+
                 img {
                     width: 250px;
                     height: 250px;
                     overflow: hidden;
-                    border-radius: 10px; // Ajusta el radio de borde según sea necesario
+                    border-radius: 10px; 
                 }
             }
         }
+
 
     }
 
 
     .tupedido {
         position: relative;
-        /* Importante para controlar el posicionamiento */
+        
         width: 100vw;
         overflow: hidden;
         min-height: 60vh;
@@ -186,19 +189,19 @@ main {
 
         img {
             position: absolute;
-            /* Posiciona la imagen absolutamente dentro del contenedor */
+            
             width: 100%;
-            /* La imagen ocupa todo el ancho del contenedor */
+           
             height: 100%;
-            /* La imagen ocupa todo el alto del contenedor */
+            
             object-fit: cover;
-            /* Ajusta la imagen para cubrir completamente el contenedor */
+            
             top: 0;
-            /* La imagen comienza desde la parte superior */
+            
             left: 0;
-            /* La imagen comienza desde la parte izquierda */
+            
             z-index: -1;
-            /* Coloca la imagen detrás de los otros elementos */
+          
         }
 
         h1 {
@@ -225,29 +228,41 @@ main {
             tfoot td {
                 font-weight: bold;
             }
+
+            tbody {
+                td {
+                    button {
+                        background-color: transparent;
+                        border: none;
+
+                        .fa-solid,
+                        .fa-xmark {
+                            font-size: 23px;
+                            color: rgba(255, 255, 255, 0.701);
+                            transition: color 0.2s linear;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         .botones {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
 
             button {
-                border-radius: 4px;
-                background-color: rgba(255, 255, 255, 0.557);
-                color: #1c1b1b;
-                text-align: center;
-                font-size: 17px;
-                padding: 16px 23px;
-                margin: 5px 20px;
-                width: 197px;
-                box-shadow: 0px 1px 3px 3px #02500e;
-                transition: all 0.2s linear;
-                transform: translateY(130px);
-                cursor: pointer;
+                background-color: transparent;
+                border: none;
 
-                &:hover {
-                    background-color: rgba(255, 255, 255, 0.701);
+                .fa-trash-can,
+                .fa-check {
+                    @extend %botones;
                 }
             }
         }
@@ -261,10 +276,15 @@ main {
 
             .card {
                 width: calc(100% - 40px);
-                /* Ajusta el ancho de la tarjeta para que ocupe el ancho completo de la pantalla, dejando un espacio de margen de 20px a cada lado */
                 margin: 0 auto 20px;
-                /* Centra la tarjeta horizontalmente y agrega espacio inferior */
+              
             }
         }
     }
 }
+
+.my-swal-font{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
