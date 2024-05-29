@@ -274,10 +274,14 @@ main {
         .parallax-container2 {
             display: block;
 
-            .card {
-                width: calc(100% - 40px);
-                margin: 0 auto 20px;
-              
+            .contenedor-productos {
+                display: flex !important;
+                flex-direction: column !important;
+
+                .card {
+                    width: calc(100% - 115px);
+                    margin: 0 auto 20px;
+                }
             }
         }
     }

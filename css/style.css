@@ -240,9 +240,12 @@ main {
 @media screen and (max-width: 1300px) {
   main .parallax-container2 {
     display: block; }
-    main .parallax-container2 .card {
-      width: calc(100% - 40px);
-      margin: 0 auto 20px; } }
+    main .parallax-container2 .contenedor-productos {
+      display: flex !important;
+      flex-direction: column !important; }
+      main .parallax-container2 .contenedor-productos .card {
+        width: calc(100% - 115px);
+        margin: 0 auto 20px; } }
 
 .my-swal-font {
   font-family: "Josefin Sans", sans-serif; }
